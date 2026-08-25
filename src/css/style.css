@@ -1,0 +1,481 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    background-color: #FFFFFF;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 
+    "nome_empresa simbolo_menu"
+    "menu_nav menu_nav";
+    background-color: #F7F9FA;
+
+}
+
+#div_logo{
+    grid-area: nome_empresa;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5px;
+}
+
+#div_logo img{
+    max-width: 50%;
+    max-height: 100px;
+}
+
+#div_burguer{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    grid-area: simbolo_menu;
+    padding-right: 20px;
+}
+
+#div_burguer i{
+    width: 24px;
+    height: 24px;
+}
+
+#menu{
+    grid-area: menu_nav;
+    display: none;
+    padding: 0px 10px 0px 10px;
+    font-family: "Manrope", sans-serif;
+    font-size: 0.95rem;
+}
+
+#menu ul{
+    list-style-type: none; 
+    display: flex;
+    gap: 10px;
+    flex-flow: row nowrap;
+}
+
+#menu li{
+    padding-bottom: 10px;
+    border-bottom: 2px solid #F7F9FA;
+}
+
+#menu a{
+    text-decoration: none;
+    color: #10233C;
+}
+
+#menu li:hover{
+   border-bottom: 2px solid #0F8F57;
+}
+
+#hero{
+    background-image: url(../img/image_hero.png);
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 50px 30px 50px 30px;
+    align-items: center;
+    gap: 15px;
+} 
+
+.titulo{
+    font-family: "Manrope", sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#titulo1{
+    color: #10233C;
+}
+
+#titulo2{
+    color: #16A765;
+}
+
+#hero p{
+    color: #6e819a;
+    font-size: 2rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    text-align: justify;
+}
+
+#hero .botao{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    padding: 10px;
+    width: 270px; 
+    color: #10233C;
+    box-shadow: none;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero img{
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+}
+
+#hero #botao1{
+    background-color: #FDBA21;
+}
+
+#hero #botao2{
+    background-color: #F7F9FA;
+    gap: 5px;
+}
+
+#indicadores{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+    padding: 10px
+}
+ 
+.indicador{
+    background-color: #F7F9FA;
+    border-radius: 10px;
+    padding: 5px 0px 5px 10px;
+    display: grid;
+    justify-content: start;
+    grid-template-areas: 
+    "img texto1"
+    "img texto2";
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+#indicadores img{
+    width: 48px;
+    height:48px;
+    grid-area: img;
+}
+
+.indicador .texto1{
+    grid-area: texto1;  
+    margin-left: 10px; 
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #10233C;
+    
+}
+
+.indicador .texto2{
+    grid-area: texto2; 
+    margin-left: 10px;   
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #10233C;
+}
+
+#servicos{
+    padding: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+}
+
+#servicos #titulo_servicos{
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #0F8F57;
+}
+
+#servicos #titulo_servicos h3{
+    font-family: "Manrope", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #16A765;
+}
+
+#servicos #titulo_servicos p{
+    font-family: "Manrope", sans-serif;
+    color: #10233C;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.container_slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 200px;
+}
+
+
+.container_card{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 500px;
+    height: 300px;
+}
+
+.card{
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity .2s;
+    border-radius: 10px;
+    background-color: #F7F9FA;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 12px 30px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: grid;
+    grid-template-areas: 
+    "imagem texto"
+    "imagem texto";
+    gap: 10px;
+    align-items: center;
+}
+
+.card img{
+    width: 64px;
+    height: 64px;
+    grid-area: imagem;
+}
+
+.card .texto{
+    grid-area: texto;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 5px;
+}
+
+.card h4{
+    font-family: "Manrope", sans-serif;
+    color: #10233C;
+    font-weight: 700px;
+}
+
+.card p{
+    font-family: "Inter", sans-serif;
+    color: #10233C;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.ativo{
+    opacity: 1;
+}
+
+#servicos button{
+    border: none;
+    background-color: transparent;
+}
+
+#botao_voltar img{
+    transform: rotate(180deg);
+}
+
+#botao_voltar,
+#botao_avancar {
+    width: 40px;
+    height: 40px;
+
+    border: none;
+
+    position: relative;
+    z-index: 10;
+}
+
+#botao_voltar img, #botao_avancar img {
+    width: 20px;
+    height: 20px;
+}
+
+#calculadora {
+    border: 1px solid black;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #0B253A;
+    display: flex;
+    flex-flow: column  nowrap;
+    gap: 7px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+#calculadora h3{
+    font-family: "Manrope", sans-serif;
+}
+
+#calculadora #titulo1_calculadora{
+    color: #16A765;
+    font-size: 1rem;
+}
+
+#calculadora #titulo2_calculadora{
+    color: white;
+    font-size: 1rem;
+}
+
+#calculadora p, #calculadora label{
+    font-family: "Inter", sans-serif;
+    text-align: justify;
+    color: #F7F9FA;
+    font-size: 0.8rem;
+}
+
+#calculadora form{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 7px;
+}
+
+#calculadora input{
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+}
+
+#calculadora button{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    padding: 10px;
+    color: #10233C;
+    border: none;
+    border-radius: 10px;
+    background-color: #FDBA21;
+}
+
+#container_resultado{
+    padding: 10px;
+    background-color: #F7F9FA;
+    font-family: "Inter", sans-serif;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column  nowrap;
+    gap: 10px;
+}
+
+#container_resultado > p{
+    color: #10233C;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+#container_resultado #resultado{
+    display: flex;
+    gap: 5px;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+#container_resultado > #resultado > p{
+    color: #16A765;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+#calculadora #disclaimer{
+    font-size: 0.6rem;
+}
+
+
+#funcionamento{
+    padding: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+}
+
+#titulo_funcionamento{
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #0F8F57;
+}
+
+#titulo_funcionamento h3{
+    font-family: "Manrope", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #16A765;
+}
+
+#titulo_funcionamento p{
+    font-family: "Manrope", sans-serif;
+    color: #10233C;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#funcionamento ol{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+    padding-top: 10px;
+}
+
+.etapa{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 5px;
+}
+
+.conteudo_etapa{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+}
+
+.conteudo_etapa h4{
+     font-family: "Manrope", sans-serif;
+     color: #10233C;
+     font-weight: 700;
+     font-size: 1.2rem;
+}
+
+.conteudo_etapa p{
+    font-family: "Inter", sans-serif;
+    font-size: 0.9rem;
+}
+
+
+#funcionamento span{
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #16A765;
+    color: white;
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolarTech</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="icon" href="src/img/sun_favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <script src="src/js/script.js" defer></script>
+    <script src="src/js/calculadora_economia.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="div_logo">
+            <img src="src/img/logo_solarTech.png" alt="Logo da SolarTech">
+        </div>
+        <div id="div_burguer">
+            <span id="burguer" class="material-icons">menu</span>
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="" target="_blank">Início</a></li>
+                <li><a href="">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="">Projetos</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Orçamento</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h2 id="titulo1" class="titulo">ENERGIA LIMPA.</h2>
+        <h2 id="titulo2" class="titulo">ECONOMIA DE VERDADE.</h2>
+        <p>Soluções completas em energia solar fotovoltaica para sua casa, empresa ou indústria.</p>
+        <button id="botao1" class="botao">Solicitar orçamento<img src="src/img/chat-conversation-svgrepo-com.svg" alt="Seta"></button>
+        <button id="botao2" class="botao"><img src="src/img/chat-conversation-svgrepo-com.svg" alt="Simbolo de Seta">Converse Conosco no WhatsApp</button>
+    </section>
+
+    <section id="indicadores">
+
+        <div class="indicador">
+            <img src="src/img/enviroment-green-leaf-nature-svgrepo-com.svg" alt="Simbolo Meio Ambiente">
+            <p class="texto1">+500</p>
+            <p class="texto2">Projetos realizados</p>
+        </div>
+
+        <div class="indicador">
+            <img src="src/img/lightning-svgrepo-com.svg" alt="Simbolo Eletricidade">
+            <p class="texto1">+8 MW</p>
+            <p class="texto2">Potência instalada</p>
+        </div>
+
+        <div class="indicador">
+            <img src="src/img/group-svgrepo-com.svg" alt="Simbolo Clientes">
+            <p class="texto1">98%</p>
+            <p class="texto2">Clientes satisfeitos</p>
+        </div>
+
+    </section>
+
+    <section id="servicos">
+
+        <div id="titulo_servicos">
+            <h3>NOSSOS SERVIÇOS</h3>
+            <p>Soluções para cada necessidade</p>
+        </div>
+    
+        <div class="container_slider">
+
+            <button id="botao_voltar"><img src="src/img/arrow-pointing-right-svgrepo-com.svg" alt="Voltar"></button>
+
+            <div class="container_card">
+
+                <div class="card ativo">
+                    <img src="src/img/servico1.png" alt="Ícone Instalação Solar">
+                    <div class="texto">
+                        <h4>Instalação Solar</h4>
+                        <p>Projetos personalizados e instalação completa de sistemas fotovoltaicos residenciais e empresariais.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="src/img/servico2.png" alt="Ícone Manutenção">
+                    <div class="texto">
+                        <h4>Manutenção</h4>
+                        <p>Diagnóstico e manutenção preventiva para manter seu sistema funcionando com máxima eficiência.</p>
+                    </div>
+                </div>
+                       
+                <div class="card">
+                    <img src="src/img/servico5.png" alt="Ícone Limpeza de Painéis">
+                    <div class="texto">
+                        <h4>Limpeza de Painéis</h4>
+                        <p>Limpeza técnica dos módulos fotovoltaicos para reduzir perdas e preservar a geração de energia.</p>
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <img src="src/img/servico3.png" alt="Ícone Monitoramento">
+                    <div class="texto">
+                        <h4>Monitoramento</h4>
+                        <p>Acompanhe o desempenho e a produção de energia do seu sistema de forma simples e eficiente.</p>
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <img src="src/img/servico4.png" alt="Ícone Inspeção Técnica">
+                    <div class="texto">
+                        <h4>Inspeção Técnica</h4>
+                        <p>Análise completa dos equipamentos e componentes para identificar falhas e garantir segurança.</p>
+                    </div>
+                </div>
+           
+                <div class="card">
+                    <img src="src/img/servico6.png" alt="ícone Suporte e Garantia">
+                    <div class="texto">
+                        <h4>Suporte e Garantia</h4>
+                        <p>Atendimento especializado para oferecer tranquilidade antes, durante e depois da instalação.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <button id="botao_avancar"><img src="src/img/arrow-pointing-right-svgrepo-com.svg" alt="Avançar"></button>
+
+        </div>
+    </section>
+
+    <section id="calculadora">
+        <h3 id="titulo1_calculadora">CALCULE SUA ECONOMIA</h3>
+        <h3 id="titulo2_calculadora">Descubra quanto você pode economizar</h4>
+        <p>Faça uma simulação rápida e descubra quanto a energia solar pode reduzir seus gastos com eletricidade.</p>
+        
+        <form action="" id="form_calculadora">
+            <label for="valor_conta">Valor médio da sua conta de energia</label>
+            <input type="number" id="valor_conta" name="valor_conta" placeholder="R$ 500,00">
+            <button id="botao_calculadora" type="button">Calcular Economia</button>
+        </form>
+
+        <p id="disclaimer">Simulação ilustrativa. Os valores podem variar de acordo com o consumo, localização e características do projeto.</p>
+    </section>
+
+    <section id="funcionamento">
+
+        <div id="titulo_funcionamento">
+            <h3>COMO FUNCIONA</h3>
+            <p>Simples, rápido e eficiente</p>
+        </div>
+        
+        <ol>
+            <li class="etapa">
+
+                <span>01</span>
+
+                <div class="conteudo_etapa">
+                    <h4>Solicite uma análise</h4>
+                    <p>Preencha o formulário para receber uma análise personalizada.</p>
+                </div>
+
+            </li>
+
+            <li class="etapa">
+
+                <span>02</span>
+
+                <div class="conteudo_etapa">
+                    <h4>Receba o projeto</h4>
+                    <p>Enviamos o projeto personalizado com todos os detalhes</p>
+                </div>
+
+            </li>
+
+            <li class="etapa">
+
+                <span>03</span>
+
+                <div class="conteudo_etapa">
+                    <h4>Instalação</h4>
+                    <p>Nossa equipe instala seu sistema com segurança e agilidade</p>
+                </div>
+
+            </li>
+
+            <li class="etapa">
+
+                <span>04</span>
+
+                <div class="conteudo_etapa">
+                    <h4>Comece a economizar</h4>
+                    <p>Reduza sua conta de luz e ainda contribua com a sustentabilidade</p>
+                </div>
+
+            </li>
+        </ol>
+        
+    </section>
+
+
+</body>
+</html>
