@@ -7,7 +7,6 @@ function expandirMenu(){
     else{
         menu.style.display = 'block'
     }
-  
 }
 
 
