@@ -13,5 +13,4 @@ botoes.forEach((botao) => {
         }
        
     })
-})
-
+}) 

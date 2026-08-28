@@ -19,7 +19,6 @@ header{
     "nome_empresa simbolo_menu"
     "menu_nav menu_nav";
     background-color: #F7F9FA;
-
 }
 
 #div_logo{
@@ -77,6 +76,10 @@ header{
 
 #menu li:hover{
    border-bottom: 2px solid #0F8F57;
+}
+
+#menu #projetos{
+    display: none;
 }
 
 #hero{
@@ -539,7 +542,6 @@ header{
     display: flex;
     flex-flow: column nowrap;
     gap: 5px;
- 
 }
 
 #titulo_orcamento h3{
@@ -576,11 +578,122 @@ header{
     color: #10233C;
 }
 
-footer{
-    height: 600px;
-    background-color: #06213A;
-    
+#confirm_form{
+    padding: 10px;
+    background-color: #F7F9FA ;
+    display: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 12px 30px rgba(0, 0, 0, 0.1);
 }
+
+#confirm_form h4{
+    font-family: "Manrope", sans-serif;
+    color: #16A765;
+    font-size: 1rem;  
+    font-weight: 600; 
+}
+
+#confirm_form p{
+    font-family: "Manrope", sans-serif;
+    color: #10233C;
+    font-size: 0.8rem;
+    text-align: justify;
+    font-weight: 700;
+}
+
+footer{
+    background-color: #04182b;
+}
+
+#footer_1{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.section_footer{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+}
+
+footer button{
+    font-family: "Manrope", sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+
+footer ul{
+    display: none;
+}
+
+.lista_footer{
+    list-style: none;
+    margin-left: 10px;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.li_contato{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    gap: 10px;
+    align-items: center;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer hr{
+    height: 2px;
+}
+
+#footer_2{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    color: white;
+}
+
+#footer_2 h5{
+    font-family: "Manrope", sans-serif;
+    color: white;
+    font-weight: normal;
+    font-size: 0.6rem;
+}
+
+#footer_2 a{
+    font-family: "Manrope", sans-serif;
+    color: white;
+    font-weight: normal;
+    font-size: 0.6rem;
+}
+
+#footer2 #politicas{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
 
 
 
