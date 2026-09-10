@@ -15,6 +15,7 @@
     <script src="src/js/footer_mobile.js" defer></script>
 </head>
 <body>
+
     <header>
         <div id="div_logo">
             <img src="src/img/logo_solarTech.png" alt="Logo da SolarTech">
@@ -38,8 +39,10 @@
         <h2 id="titulo1" class="titulo">ENERGIA LIMPA.</h2>
         <h2 id="titulo2" class="titulo">ECONOMIA DE VERDADE.</h2>
         <p>Soluções completas em energia solar fotovoltaica para sua casa, empresa ou indústria.</p>
-        <button id="botao1" class="botao">Solicitar orçamento<img src="src/img/chat-conversation-svgrepo-com.svg" alt="Seta"></button>
-        <button id="botao2" class="botao"><img src="src/img/chat-conversation-svgrepo-com.svg" alt="Simbolo de Seta">Converse Conosco no WhatsApp</button>
+        <div id="botoes_hero">
+            <button id="botao1" class="botao">Solicitar orçamento<img src="src/img/chat-conversation-svgrepo-com.svg" alt="Seta"></button>
+            <button id="botao2" class="botao"><img src="src/img/chat-conversation-svgrepo-com.svg" alt="Simbolo de Seta">Converse Conosco no WhatsApp</button>
+        </div>
     </section>
 
     <section id="indicadores">
@@ -64,217 +67,177 @@
 
     </section>
 
-    <section id="servicos">
-
-        <div id="titulo_servicos">
-            <h3>NOSSOS SERVIÇOS</h3>
-            <p>Soluções para cada necessidade</p>
-        </div>
-    
-        <div class="container_slider">
-
-            <button id="botao_voltar"><img src="src/img/arrow-pointing-right-svgrepo-com.svg" alt="Voltar"></button>
-
-            <div class="container_card">
-
-                <div class="card ativo">
-                    <img src="src/img/servico1.png" alt="Ícone Instalação Solar">
-                    <div class="texto">
-                        <h4>Instalação Solar</h4>
-                        <p>Projetos personalizados e instalação completa de sistemas fotovoltaicos residenciais e empresariais.</p>
+    <main>
+        <section id="servicos">
+            <div id="titulo_servicos">
+                <h3>NOSSOS SERVIÇOS</h3>
+                <p>Soluções para cada necessidade</p>
+            </div>
+        
+            <div class="container_slider">
+                <button id="botao_voltar"><img src="src/img/arrow-pointing-right-svgrepo-com.svg" alt="Voltar"></button>
+                <div class="container_card">
+                    <div class="card ativo">
+                        <img src="src/img/servico1.png" alt="Ícone Instalação Solar">
+                        <div class="texto">
+                            <h4>Instalação Solar</h4>
+                            <p>Projetos personalizados e instalação completa de sistemas fotovoltaicos residenciais e empresariais.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="src/img/servico2.png" alt="Ícone Manutenção">
+                        <div class="texto">
+                            <h4>Manutenção</h4>
+                            <p>Diagnóstico e manutenção preventiva para manter seu sistema funcionando com máxima eficiência.</p>
+                        </div>
+                    </div>
+        
+                    <div class="card">
+                        <img src="src/img/servico5.png" alt="Ícone Limpeza de Painéis">
+                        <div class="texto">
+                            <h4>Limpeza de Painéis</h4>
+                            <p>Limpeza técnica dos módulos fotovoltaicos para reduzir perdas e preservar a geração de energia.</p>
+                        </div>
+                    </div>
+        
+                    <div class="card">
+                        <img src="src/img/servico3.png" alt="Ícone Monitoramento">
+                        <div class="texto">
+                            <h4>Monitoramento</h4>
+                            <p>Acompanhe o desempenho e a produção de energia do seu sistema de forma simples e eficiente.</p>
+                        </div>
+                    </div>
+        
+                    <div class="card">
+                        <img src="src/img/servico4.png" alt="Ícone Inspeção Técnica">
+                        <div class="texto">
+                            <h4>Inspeção Técnica</h4>
+                            <p>Análise completa dos equipamentos e componentes para identificar falhas e garantir segurança.</p>
+                        </div>
+                    </div>
+        
+                    <div class="card">
+                        <img src="src/img/servico6.png" alt="ícone Suporte e Garantia">
+                        <div class="texto">
+                            <h4>Suporte e Garantia</h4>
+                            <p>Atendimento especializado para oferecer tranquilidade antes, durante e depois da instalação.</p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="card">
-                    <img src="src/img/servico2.png" alt="Ícone Manutenção">
-                    <div class="texto">
-                        <h4>Manutenção</h4>
-                        <p>Diagnóstico e manutenção preventiva para manter seu sistema funcionando com máxima eficiência.</p>
-                    </div>
-                </div>
-                       
-                <div class="card">
-                    <img src="src/img/servico5.png" alt="Ícone Limpeza de Painéis">
-                    <div class="texto">
-                        <h4>Limpeza de Painéis</h4>
-                        <p>Limpeza técnica dos módulos fotovoltaicos para reduzir perdas e preservar a geração de energia.</p>
-                    </div>
-                </div>
+                <button id="botao_avancar"><img src="src/img/arrow-pointing-right-svgrepo-com.svg" alt="Avançar"></button>
+            </div>
+        </section>
+        <section id="calculadora">
+            <div id="div_calculadora">
+                <h3 id="titulo1_calculadora">CALCULE SUA ECONOMIA</h3>
+                <h3 id="titulo2_calculadora">Descubra quanto você pode economizar</h4>
+                <p id="texto_calc">Faça uma simulação rápida e descubra quanto a energia solar pode reduzir seus gastos com eletricidade.</p>
+            </div>
+            <form action="" id="form_calculadora">
+                <label for="valor_conta">Valor médio da sua conta de energia</label>
+                <input type="number" id="valor_conta" name="valor_conta" placeholder="R$ 500,00">
+                <button id="botao_calculadora" type="button">Calcular Economia</button>
+                <p id="disclaimer">Simulação ilustrativa. Os valores podem variar de acordo com o consumo, localização e características do projeto.</p>
+            </form>
             
-                <div class="card">
-                    <img src="src/img/servico3.png" alt="Ícone Monitoramento">
-                    <div class="texto">
-                        <h4>Monitoramento</h4>
-                        <p>Acompanhe o desempenho e a produção de energia do seu sistema de forma simples e eficiente.</p>
+        </section>
+        <section id="funcionamento">
+            <div id="titulo_funcionamento">
+                <h3>COMO FUNCIONA</h3>
+                <p>Simples, rápido e eficiente</p>
+            </div>
+            <ol>
+                <li class="etapa">
+                    <span>01</span>
+                    <div class="conteudo_etapa">
+                        <h4>Solicite uma análise</h4>
+                        <p>Preencha o formulário para receber uma análise personalizada.</p>
                     </div>
-                </div>
-            
-                <div class="card">
-                    <img src="src/img/servico4.png" alt="Ícone Inspeção Técnica">
-                    <div class="texto">
-                        <h4>Inspeção Técnica</h4>
-                        <p>Análise completa dos equipamentos e componentes para identificar falhas e garantir segurança.</p>
+                </li>
+                <li class="etapa">
+                    <span>02</span>
+                    <div class="conteudo_etapa">
+                        <h4>Receba o projeto</h4>
+                        <p>Enviamos o projeto personalizado com todos os detalhes</p>
                     </div>
-                </div>
-           
-                <div class="card">
-                    <img src="src/img/servico6.png" alt="ícone Suporte e Garantia">
-                    <div class="texto">
-                        <h4>Suporte e Garantia</h4>
-                        <p>Atendimento especializado para oferecer tranquilidade antes, durante e depois da instalação.</p>
+                </li>
+                <li class="etapa">
+                    <span>03</span>
+                    <div class="conteudo_etapa">
+                        <h4>Instalação</h4>
+                        <p>Nossa equipe instala seu sistema com segurança e agilidade</p>
                     </div>
-                </div>
-
-            </div>
-
-            <button id="botao_avancar"><img src="src/img/arrow-pointing-right-svgrepo-com.svg" alt="Avançar"></button>
-
-        </div>
-    </section>
-
-    <section id="calculadora">
-        <h3 id="titulo1_calculadora">CALCULE SUA ECONOMIA</h3>
-        <h3 id="titulo2_calculadora">Descubra quanto você pode economizar</h4>
-        <p>Faça uma simulação rápida e descubra quanto a energia solar pode reduzir seus gastos com eletricidade.</p>
+                </li>
+                <li class="etapa">
+                    <span>04</span>
+                    <div class="conteudo_etapa">
+                        <h4>Comece a economizar</h4>
+                        <p>Reduza sua conta de luz e ainda contribua com a sustentabilidade</p>
+                    </div>
+                </li>
+            </ol>
         
-        <form action="" id="form_calculadora">
-            <label for="valor_conta">Valor médio da sua conta de energia</label>
-            <input type="number" id="valor_conta" name="valor_conta" placeholder="R$ 500,00">
-            <button id="botao_calculadora" type="button">Calcular Economia</button>
-        </form>
-
-        <p id="disclaimer">Simulação ilustrativa. Os valores podem variar de acordo com o consumo, localização e características do projeto.</p>
-    </section>
-
-    <section id="funcionamento">
-
-        <div id="titulo_funcionamento">
-            <h3>COMO FUNCIONA</h3>
-            <p>Simples, rápido e eficiente</p>
-        </div>
-
-        <ol>
-            <li class="etapa">
-
-                <span>01</span>
-
-                <div class="conteudo_etapa">
-                    <h4>Solicite uma análise</h4>
-                    <p>Preencha o formulário para receber uma análise personalizada.</p>
+        </section>
+        <section id="faq">
+            <div id="titulo_faq">
+                <h3>FAQ</h3>
+                <p>Dúvidas Frequentes</p>
+            </div>
+            <div id="container_perguntas">
+                <div>
+                    <button type="button" class="botao_faq">Quanto tempo dura um sistema solar?<span class="material-icons">arrow_drop_down</span></button>
+                    <p class="faq_resposta">Os módulos fotovoltaicos possuem longa vida útil e podem continuar produzindo energia por mais de 25 anos quando utilizados e mantidos adequadamente.</p>
                 </div>
-
-            </li>
-
-            <li class="etapa">
-
-                <span>02</span>
-
-                <div class="conteudo_etapa">
-                    <h4>Receba o projeto</h4>
-                    <p>Enviamos o projeto personalizado com todos os detalhes</p>
+                <div>
+                    <button type="button" class="botao_faq">Quanto posso economizar com energia solar?<span class="material-icons">arrow_drop_down</span></button>
+                    <p class="faq_resposta">A economia depende do consumo, da quantidade de painéis, da incidência solar e das características do imóvel. Em muitos projetos, uma parcela significativa do consumo pode ser compensada pela geração solar.</p>
                 </div>
-
-            </li>
-
-            <li class="etapa">
-
-                <span>03</span>
-
-                <div class="conteudo_etapa">
-                    <h4>Instalação</h4>
-                    <p>Nossa equipe instala seu sistema com segurança e agilidade</p>
+                <div>
+                    <button type="button" class="botao_faq">As placas solares funcionam em dias nublados?<span class="material-icons">arrow_drop_down</span></button>
+                    <p class="faq_resposta">Sim. Os painéis continuam gerando energia com radiação solar indireta, embora a produção possa ser menor do que em dias de céu aberto.</p>
                 </div>
-
-            </li>
-
-            <li class="etapa">
-
-                <span>04</span>
-
-                <div class="conteudo_etapa">
-                    <h4>Comece a economizar</h4>
-                    <p>Reduza sua conta de luz e ainda contribua com a sustentabilidade</p>
+                <div>
+                    <button type="button" class="botao_faq">É necessário fazer manutenção?<span class="material-icons">arrow_drop_down</span></button>
+                    <p class="faq_resposta">Sim. Inspeções periódicas e limpeza dos módulos ajudam a preservar o desempenho e identificar possíveis problemas no sistema.</p>
                 </div>
-
-            </li>
-        </ol>
+                <div>
+                    <button type="button" class="botao_faq">Quanto tempo leva a instalação?<span class="material-icons">arrow_drop_down</span></button>
+                    <p class="faq_resposta">O período depende do tamanho e da complexidade do projeto. Instalações residenciais normalmente exigem menos tempo que grandes projetos comerciais ou industriais.</p>
+                </div>
+                <div>
+                    <button type="button" class="botao_faq">O sistema funciona durante a noite?<span class="material-icons">arrow_drop_down</span></button>
+                    <p class="faq_resposta">Os painéis não produzem energia durante a noite. Nesse período, imóveis conectados à rede elétrica utilizam a energia da distribuidora conforme as características do sistema instalado.</p>
+                </div>
+            </div>
+        </section>
+        <section id="orcamento">
+            <div id="titulo_orcamento">
+                <h3>SOLICITE SEU ORÇAMENTO</h3>
+                <p>Vamos conversar sobre o seu projeto</p>
+            </div>
         
-    </section>
-
-    <section id="faq">
-
-        <div id="titulo_faq">
-            <h3>FAQ</h3>
-            <p>Dúvidas Frequentes</p>
-        </div>
-
-        <div id="container_perguntas">
-
-            <div>
-                <button type="button" class="botao_faq">Quanto tempo dura um sistema solar?<span class="material-icons">arrow_drop_down</span></button>
-                <p class="faq_resposta">Os módulos fotovoltaicos possuem longa vida útil e podem continuar produzindo energia por mais de 25 anos quando utilizados e mantidos adequadamente.</p>
+            <form id="form_orcamento">
+                <input type="text" name="nome" id="nome" placeholder="Nome Completo" required>
+                <input type="tel" name="tel" id="tel" pattern="[0-9]{2} [0-9]{5} [0-9]{4}" placeholder="Telefone / (99) 99999 9999" required>
+                <input type="number" name="consumo" id="consumo" placeholder="Consumo médio (R$)" required>
+                <input type="email" name="email" id="email" placeholder="E-mail" required>
+                <select name="tipo_imovel" id="" id="tipo_imovel" placeholder="Tipo de Imóvel" required>
+                    <option value="" disabled selected>Tipo de Imovel</option>
+                    <option value="residencial">Residencial</option>
+                    <option value="comercail">Comercial</option>
+                    <option value="industrail">Industrial</option>
+                    <option value="rural">Rural</option>
+                    <option value="outro">Outro</option>
+                </select>
+                <input type="text" name="cidade" id="cidade" placeholder="Cidade" required>
+                <button type="submit" id="botao_form">Solicitar Orçamento</button>
+            </form>
+            <div id="confirm_form">
+                <h4>Solicitação enviada com sucesso!</h4>
+                <p>Recebemos suas informações. Nossa equipe entrará em contato em breve.</p>
             </div>
-
-            <div>
-                <button type="button" class="botao_faq">Quanto posso economizar com energia solar?<span class="material-icons">arrow_drop_down</span></button>
-                <p class="faq_resposta">A economia depende do consumo, da quantidade de painéis, da incidência solar e das características do imóvel. Em muitos projetos, uma parcela significativa do consumo pode ser compensada pela geração solar.</p>
-            </div>
-
-            <div>
-                <button type="button" class="botao_faq">As placas solares funcionam em dias nublados?<span class="material-icons">arrow_drop_down</span></button>
-                <p class="faq_resposta">Sim. Os painéis continuam gerando energia com radiação solar indireta, embora a produção possa ser menor do que em dias de céu aberto.</p>
-            </div>
-
-            <div>
-                <button type="button" class="botao_faq">É necessário fazer manutenção?<span class="material-icons">arrow_drop_down</span></button>
-                <p class="faq_resposta">Sim. Inspeções periódicas e limpeza dos módulos ajudam a preservar o desempenho e identificar possíveis problemas no sistema.</p>
-
-            </div>
-
-            <div>
-                <button type="button" class="botao_faq">Quanto tempo leva a instalação?<span class="material-icons">arrow_drop_down</span></button>
-                <p class="faq_resposta">O período depende do tamanho e da complexidade do projeto. Instalações residenciais normalmente exigem menos tempo que grandes projetos comerciais ou industriais.</p>
-            </div>
-
-            <div>
-                <button type="button" class="botao_faq">O sistema funciona durante a noite?<span class="material-icons">arrow_drop_down</span></button>
-                <p class="faq_resposta">Os painéis não produzem energia durante a noite. Nesse período, imóveis conectados à rede elétrica utilizam a energia da distribuidora conforme as características do sistema instalado.</p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <section id="orcamento">
-
-        <div id="titulo_orcamento">
-            <h3>SOLICITE SEU ORÇAMENTO</h3>
-            <p>Vamos conversar sobre o seu projeto</p>
-        </div>
-        
-        <form id="form_orcamento">
-            <input type="text" name="nome" id="nome" placeholder="Nome Completo" required>
-            <input type="tel" name="tel" id="tel" pattern="[0-9]{2} [0-9]{5} [0-9]{4}" placeholder="Telefone / (99) 99999 9999" required>
-            <input type="number" name="consumo" id="consumo" placeholder="Consumo médio (R$)" required>
-            <input type="email" name="email" id="email" placeholder="E-mail" required>
-            <select name="tipo_imovel" id="" id="tipo_imovel" placeholder="Tipo de Imóvel" required>
-                <option value="" disabled selected>Tipo de Imovel</option>
-                <option value="residencial">Residencial</option>
-                <option value="comercail">Comercial</option>
-                <option value="industrail">Industrial</option>
-                <option value="rural">Rural</option>
-                <option value="outro">Outro</option>
-            </select>
-            <input type="text" name="cidade" id="cidade" placeholder="Cidade" required>
-            <button type="submit" id="botao_form">Solicitar Orçamento</button>
-        </form>
-
-        <div id="confirm_form">
-            <h4>Solicitação enviada com sucesso!</h4>
-            <p>Recebemos suas informações. Nossa equipe entrará em contato em breve.</p>
-        </div>
-
-    </section>
+        </section>
+    </main>
 
     <footer>
 
@@ -326,7 +289,6 @@
             <h5>2026@ Todos os direitos reservados</h5>
             <div id="politicas">
                 <a href="">Politica de Privacidade</a>
-                |
                 <a href="">Termos de Uso</a>
             </div>
         </div>

@@ -9,7 +9,7 @@ botao.addEventListener("click", () => {
 
     container_resultado.replaceChildren();
 
-    form.after(container_resultado)
+    botao.after(container_resultado)
 
     const valor_conta = Number(entrada.value)
 

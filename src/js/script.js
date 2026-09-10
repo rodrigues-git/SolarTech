@@ -1,17 +1,9 @@
-const butaoMenu = document.getElementById('burguer')
-butaoMenu.addEventListener('click', () => {
-    const menu = document.getElementById('menu')
+const botaoMenu = document.getElementById('burguer');
+const menu = document.getElementById('menu');
 
-    if (menu.style.display == 'flex'){
-          menu.style.display = 'none'
-    }
-    else{
-        menu.style.display = 'flex'
-        menu.style.justifyContent = "center"
-        menu.style.flexFlow
-    }
-}
-)
+botaoMenu.addEventListener('click', () => {
+    menu.classList.toggle('menu_aberto');
+});
 
 
 
