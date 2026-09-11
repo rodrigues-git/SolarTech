@@ -32,7 +32,7 @@ header{
 
 #div_logo img{
    width: 200px;
-   height: 73x;
+   height: 73px;
 }
 
 #div_burguer{
@@ -931,15 +931,15 @@ footer hr{
     #footer_1{
         flex-flow: row nowrap;
         justify-content: space-around;
-        padding: 20px 0px;
-        gap: 0px;
+        padding: 20px 10px;
+        gap: 100px;
     }
 
     .section_footer{
         display: flex;
         flex-flow: column nowrap;
         gap: 0px;
-        width: auto;
+        width: 250px;
     }
 
     #footer_1 button{

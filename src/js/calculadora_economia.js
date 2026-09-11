@@ -13,9 +13,9 @@ botao.addEventListener("click", () => {
 
     const valor_conta = Number(entrada.value)
 
-    economia_mensal = 0.70 * valor_conta
+    let economia_mensal = 0.70 * valor_conta
 
-    economia_anual = economia_mensal * 12
+    let economia_anual = economia_mensal * 12
 
     const p1 = document.createElement('p')
 
