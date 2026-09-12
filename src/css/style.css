@@ -866,6 +866,10 @@ footer hr{
         font-size: 1.1rem;
     }
 
+    #botao_calculadora:hover{
+        cursor: pointer;
+    }
+
     #funcionamento ol{
         flex-flow: row nowrap;
         min-height: 300px;
