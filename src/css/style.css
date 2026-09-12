@@ -928,6 +928,10 @@ footer hr{
         gap: 15px;
     }
 
+    #botao_form:hover{
+        cursor: pointer;
+    }
+
     #footer_1{
         flex-flow: row nowrap;
         justify-content: space-around;
