@@ -2,6 +2,12 @@
 
 Landing page responsiva desenvolvida para uma empresa fictícia de energia solar. O projeto foi criado com foco em **desenvolvimento front-end**, responsividade e experiência do usuário em diferentes tamanhos de tela.
 
+## 🌐 Projeto online
+
+O projeto está publicado no GitHub Pages:
+
+👉 [Acessar SolarTech](https://rodrigues-git.github.io/SolarTech/)
+
 ## 💻 Tecnologias
 
 * HTML5
